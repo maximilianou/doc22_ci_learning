@@ -17,17 +17,20 @@ https://docs.drone.io/installation/github/single-machine/
 
 
 --------
-### TODO
- - TODO
+### Running Drone in laptop 
+ - Now the tunneling to a public domain in a public ip address
+
 
 ```
-educacion@family:~$ ssh contenedor@ci.maximilianou.com -nN -R 20000:127.0.0.1:20000
+educacioon@family:~$ ssh contenedor@ci.maximilianou.com -nN -R 20000:127.0.0.1:20000
 ```
 
 ```
 educacion@family:~$ docker pull drone/drone
 ```
 https://docs.docker.com/compose/compose-file/
+
+ - Docker compose complete, to start running Drone in laptop
 
 ```
 educacion@family:~/src/doc22_ci_learning$ cat docker-compose.yml 
