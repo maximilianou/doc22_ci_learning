@@ -1,0 +1,22 @@
+version: '3'
+services:
+    drone_io:
+        image: drone/drone
+        container_name: drone_io
+        volumes:
+            - '/var/run/docker.sock:/var/run/docker.sock'
+            - '/var/lib/drone:/data'
+        env_file: .env
+        environment:
+            - DRONE_GITHUB_SERVER=https://github.com
+            - DRONE_GITHUB_CLIENT_ID=${L_DRONE_GITHUB_CLIENT_ID}
+            - DRONE_GITHUB_CLIENT_SECRET=${L_DRONE_GITHUB_SECRET}
+            - DRONE_RUNNER_CAPACITY=2
+            - DRONE_SERVER_HOST=${L_DRONE_SERVER_HOST}
+            - DRONE_SERVER_PROTO=${L_DRONE_SERVER_PROTO}
+            - DRONE_TLS_AUTOCERT=true
+        ports:
+            - '20000:80'
+            - '443:443'
+        #restart: always
+
