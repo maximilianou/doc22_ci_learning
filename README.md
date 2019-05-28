@@ -5,6 +5,13 @@ Learning ci, step one
 
 https://webhookrelay.com/blog/2019/02/11/using-drone-for-simple-selfhosted-ci-cd/
 
+Setting up github
+
+And connecting to drone local
+
+https://docs.drone.io/installation/github/single-machine/
+
+
 --------
 ### TODO
  - TODO
