@@ -5,9 +5,13 @@ Learning ci, step one
 
 https://webhookrelay.com/blog/2019/02/11/using-drone-for-simple-selfhosted-ci-cd/
 
-Setting up github
+ - Setting up github
 
-And connecting to drone local
+
+github.com > Settings > Developer settings > OAuth App
+
+
+ - And connecting to drone local
 
 https://docs.drone.io/installation/github/single-machine/
 
@@ -18,6 +22,16 @@ https://docs.drone.io/installation/github/single-machine/
 
 ```
 educacion@family:~$ ssh contenedor@js.maximilianou.com -nN -R 20000:127.0.0.1:19000
+```
+
+```
+educacion@family:~$ docker pull drone/drone
+```
+
+https://docs.docker.com/compose/compose-file/
+
+```
+
 ```
 
 
