@@ -1,0 +1,13 @@
+kind: pipeline
+name: default
+
+steps:
+- name: v4_hooks 
+  image: node
+  commands:
+  - cd v4_hooks 
+  - npm install 
+  - npm run start  
+  - npm run test  
+
+

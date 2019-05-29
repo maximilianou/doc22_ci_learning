@@ -14,7 +14,8 @@ github.com > Settings > Developer settings > OAuth App
  - And connecting to drone local
 
 https://docs.drone.io/installation/github/single-machine/
-
+ 
+https://webhookrelay.com/blog/2019/02/11/using-drone-for-simple-selfhosted-ci-cd/
 
 --------
 ### Running Drone in laptop 
