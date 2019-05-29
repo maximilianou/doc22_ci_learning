@@ -1,5 +1,11 @@
 # doc22_ci_learning
+
+
 Learning ci, step one
+
+
+[![Build Status](http://ci.maximilianou.com/api/badges/maximilianou/doc22_ci_learning/status.svg)](http://ci.maximilianou.com/maximilianou/doc22_ci_learning)
+
 
 ## Self Hosted CI CD
 
@@ -56,6 +62,14 @@ services:
             - '20000:80'
             - '443:443'
         #restart: always
+```
+### Starting Drone Server from Command Line with docker compose
+ - Starting drone with docker compose
+
+```
+educacion@family:~/src/doc22_ci_learning$ docker-compose -f docker-compose-drone.yml up -d
+Starting drone_io ... done
+
 ```
 
 
